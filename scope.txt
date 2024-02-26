@@ -1,0 +1,8 @@
+
+user flow:
+home page with sign in button -> sign in page with OAuth providers -> dashboard page -> schemes web app
+
+notes:
+as notes are inputted, automatically add to calendar
+scribble out notes
+google keep style in terms of organization of notes
