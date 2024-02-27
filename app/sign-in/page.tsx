@@ -1,7 +1,6 @@
-'use client';
 import readUserSession from "@/lib/actions";
-import createSupabaseFrontendClient from "@/lib/supabase/client"
 import { redirect } from "next/navigation";
+import GoogleSignIn from "./GoogleSignIn";
 
 export default async function SignIn() {
 
@@ -11,20 +10,10 @@ export default async function SignIn() {
       return redirect('/dashboard')
     }
 
-    const supabase = createSupabaseFrontendClient();
-    const loginWithGoogle = () => {
-        supabase.auth.signInWithOAuth({
-            provider:'google',
-            options: {
-                redirectTo: `${location.origin}/auth/callback`
-            },
-        });
-    }
-
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
             <div>Sign-In Page</div>
-            <button onClick={loginWithGoogle}>Sign-In With Google</button>
+            <GoogleSignIn />
         </main>
     )
 }
