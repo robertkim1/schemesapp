@@ -1,13 +1,13 @@
-import readUserSession from "@/lib/actions";
+import getUser from "@/lib/actions/getUser";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 
 export default async function Home() {
 
-  const { data }  = await readUserSession();
+    const { data }= await getUser();
 
-  if (data.session) {
-    return redirect('/dashboard')
+  if (data.user) {
+    return redirect('/app')
   }
    
     return (

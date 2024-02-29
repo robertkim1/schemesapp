@@ -1,13 +1,14 @@
-import readUserSession from "@/lib/actions";
+
 import { redirect } from "next/navigation";
 import GoogleSignIn from "./GoogleSignIn";
+import getUser from "@/lib/actions/getUser";
 
 export default async function SignIn() {
 
-    const { data }  = await readUserSession();
-
-    if (data.session) {
-      return redirect('/dashboard')
+    const { data } = await getUser();
+    
+    if (data.user) {
+      return redirect('/app')
     }
 
     return (
