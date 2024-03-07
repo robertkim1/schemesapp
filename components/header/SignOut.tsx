@@ -1,5 +1,6 @@
 import createSupabaseServerClient from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
+import { Button } from "../ui/button";
 
 export default async function SignOut() {
     const signOut = async () => {
@@ -12,7 +13,7 @@ export default async function SignOut() {
     return (
         <main>
             <form action={signOut}>
-                <button>Sign Out</button>
+                <Button>Sign Out</Button>
             </form>
         </main>
     )

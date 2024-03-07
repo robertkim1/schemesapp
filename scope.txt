@@ -2,7 +2,15 @@
 user flow:
 home page with sign in button -> sign in page with OAuth providers -> dashboard page -> schemes web app
 
-notes:
+flows todo:
+add a dropdown for your user show settings, sign in sign out etc circley button
+weird styling thing going on when going back and forth pages
+
+
+notes todo:
 as notes are inputted, automatically add to calendar
 scribble out notes
 google keep style in terms of organization of notes
+
+
+

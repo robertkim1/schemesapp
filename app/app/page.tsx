@@ -1,4 +1,3 @@
-
 import SignOut from "../../components/header/SignOut";
 import getUser from "@/lib/actions/getUser";
 import { redirect } from "next/navigation";

@@ -1,4 +1,5 @@
 'use client';
+import { Button } from "@/components/ui/button";
 import createSupabaseFrontendClient from "@/lib/supabase/client";
 
 export default function GoogleSignIn() {
@@ -13,7 +14,6 @@ export default function GoogleSignIn() {
         });
     }
 
-
     // const getBaseUrl = () => {
     //     if (typeof window !== "undefined") return ""; // browser should use relative url
     //     if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`; // SSR should use vercel url
@@ -23,8 +23,6 @@ export default function GoogleSignIn() {
     // production vercel link after redirection goes to localhost:3000, this may fix?
 
     return(
-        <main>
-            <button onClick={loginWithGoogle}>Sign-In With Google</button>
-        </main>
+        <Button onClick={loginWithGoogle}>Sign-In With Google</Button>
     )
 }
