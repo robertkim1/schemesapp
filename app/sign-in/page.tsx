@@ -1,7 +1,7 @@
 
 import { redirect } from "next/navigation";
 import GoogleSignIn from "./GoogleSignIn";
-import getUser from "@/lib/actions/getUser";
+import getUser from "@/lib/supabase/actions/getUser";
 
 export default async function SignIn() {
 

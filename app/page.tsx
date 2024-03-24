@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import getUser from "@/lib/actions/getUser";
+import getUser from "@/lib/supabase/actions/getUser";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 

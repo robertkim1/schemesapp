@@ -2,7 +2,7 @@
 import Link from "next/link";
 import SignOut from "./SignOut";
 import { Button } from "../ui/button";
-import getUser from "@/lib/actions/getUser";
+import getUser from "@/lib/supabase/actions/getUser";
 
 export default async function Header() {
 

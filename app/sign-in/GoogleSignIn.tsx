@@ -1,6 +1,6 @@
 'use client';
 import { Button } from "@/components/ui/button";
-import createSupabaseFrontendClient from "@/lib/supabase/client";
+import createSupabaseFrontendClient from "@/lib/supabase/clients/client";
 
 export default function GoogleSignIn() {
 

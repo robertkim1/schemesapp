@@ -1,4 +1,4 @@
-import createSupabaseServerClient from "@/lib/supabase/server";
+import createSupabaseServerClient from "@/lib/supabase/clients/server";
 import { redirect } from "next/navigation";
 import { Button } from "../ui/button";
 
